@@ -1,0 +1,17 @@
+					<div class="rm">
+						热门问题:
+					</div>
+					<div class="rmwt">
+						<%for(var n=0;n<result.hot.length;n++){%>				
+							<a href="#"><%=result.hot[n].name%></a>		
+						<%}%>
+					</div>
+					<div class="rmq">
+						其他问题:
+					</div>
+					<div class="rmwq">
+						<%for(var n=0;n<result.other.length;n++){%>
+						<a href="#"><%=result.other[n].name%></a>
+						<%}%>
+					</div>
+					

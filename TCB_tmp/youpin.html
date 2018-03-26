@@ -1,0 +1,13 @@
+<ul>			
+		<%for(var n=0;n< result.length;n++){%>
+		<li class="item">
+			<a href="#">
+				<div class="pict"><img src=<%=result[n].thum_img.old%>></div>
+						<div class="pname">
+ 				<span class="brand"><%=result[n].brand_name%></span>
+				<%=result[n].model_name%></div>
+				<div class="price">￥<%=result[n].price%></div>
+			</a>
+		</li>
+		<%}%>
+	</ul>

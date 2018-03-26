@@ -1,0 +1,11 @@
+<%for(var n=0;n< result.length;n++){%>
+<div class="pin">
+			<%=result[n].name%>
+			<span>＞</span>
+			</div>
+			<div class="pinr">
+			<%for(var i=0;i< result[n].list.length;i++){%>
+				<a href="#"><%=result[n].list[i].name%></a>
+				<%}%>
+			</div>
+<%}%>

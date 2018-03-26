@@ -1,0 +1,10 @@
+<ul>			
+		<%for(var n=0;n< result.length;n++){%>
+		<li class="item">
+			<a href="#">
+				<div class="pict"><img src=<%=result[n].img_url%>></div>
+				<div class="pname"><%=result[n].model_alis%></div>
+			</a>
+		</li>
+		<%}%>
+	</ul>

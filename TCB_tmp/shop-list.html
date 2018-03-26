@@ -1,0 +1,46 @@
+<%for(var n=0;n< shop_data.length;n++){%>
+				<div class="shop-item">
+					<div class="shop-pic">
+						<div class="sur">
+						<div class="source">
+							<span class="peifu"></span>
+							先行赔付
+						</div>
+						<div class="renz">
+							<span class="rz"></span>
+							同城帮认证
+						</div>
+						<div class="rq">
+							<span>人气:<%=shop_data[n].shop_visit%>次浏览</span>
+						</div>
+						</div>
+						<a>
+							<img src = <%=shop_data[n].shop_ico%>>
+						</a>
+					</div>
+					<div class="shop-name"> 
+						<h3>
+						<a><%=shop_data[n].shop_name%></a>
+						<div class="shop-gred">
+							店铺等级:
+							<a>
+								<span class="zuanshi"></span>
+								<span class="zuanshi"></span>
+								<span class="zuanshi"></span>
+								<span class="zuanshi"></span>
+								<span class="zuanshi"></span>
+							</a>
+						</div>
+						</h3>
+						<div class="jianjie"> 
+							主营:<%=shop_data[n].main%>
+						</div>
+						<div class="add">
+							地址:<%=shop_data[n].addr_detail%>
+						</div>
+					</div>
+					<div class="entero" >
+					<a href="#" class="jrdpo">进入店铺</a>
+					</div>
+				</div>	
+				<%}%>

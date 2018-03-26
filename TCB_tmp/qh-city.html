@@ -1,0 +1,27 @@
+		<ul>
+			<li>
+			<h4>热门</h4>
+				<p id="qh-lio">
+				<%for(var n=0;n< result.hotcity.length;n++){%>
+				<a class="qhd"  value="<%=result.hotcity[n].code%>"><%=result.hotcity[n].name%></a>	
+				<%}%>
+				</p>
+			</li>
+			<li>
+				<h4>拼音</h4>
+				<div class="qh-piny">
+					<%for(var i in result.citylist){%>
+					<a class="qh-a"><%=i%></a>
+					<%}%>
+				</div>
+				<div class="qh-dm">
+					<%for(var h in result.citylist){%>
+					<p>
+						<%for(var y=0;y< result.citylist[h].length;y++){%>
+						<a><%=result.citylist[h][y].name%></a>
+						<%}%>
+					</p>
+					<%}%>
+				</div>
+			</li>
+		</ul>
